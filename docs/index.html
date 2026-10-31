@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cinema Atlas — an interactive TMDB film analytics portfolio by Gia Phuc. Explore genres, audience ratings and reported film finances.">
+  <meta name="theme-color" content="#101116">
+  <title>Cinema Atlas · TMDB analytics</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a href="#welcome" class="brand"><span class="brand-icon">C<span>↗</span></span><span>CINEMA<br><b>ATLAS</b></span></a>
+    <div class="nav-label">THE EXPLORER</div>
+    <nav aria-label="Main navigation" id="navigation"></nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Historical dataset<br><small>TMDB 5000 · 2017 edition</small><hr><a href="https://github.com/LHGiaPhuc">LHGiaPhuc ↗</a><small>Computer Science · Data / BI</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>FILM INTELLIGENCE <span class="muted">/</span> <span id="breadcrumb">Welcome</span></span><button id="sources-button" class="quiet">About the data ↗</button></header>
+    <main id="main" tabindex="-1"><p class="loading" role="status">Loading the film collection…</p></main>
+    <footer><span>Cinema Atlas <span class="muted">/</span> A data portfolio by LHGiaPhuc</span><a href="https://www.themoviedb.org">Data from TMDB ↗</a></footer>
+  </div>
+  <dialog id="sources"><div class="dialog-top"><h2>About the data</h2><button id="close-sources" aria-label="Close data information">✕</button></div><div id="source-content"></div></dialog>
+  <noscript>This interactive dashboard requires JavaScript. Read the project README for methodology and data sources.</noscript>
+</body>
+</html>

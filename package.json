@@ -1,0 +1,13 @@
+{
+  "name": "tmdb-cinema-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A five-page TMDB analytics portfolio for GitHub Pages",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/metrics.test.mjs",
+    "data": "python scripts/prepare_data.py"
+  },
+  "engines": { "node": ">=20" }
+}
